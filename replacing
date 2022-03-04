@@ -1,0 +1,26 @@
+/**************
+ *WAP TO REPLLACE VOWELS WITH "*" IN A sentence
+ AUTHOR - HSKOM
+*******************************************************************************/
+import java.util.Scanner;
+public class replacing
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+      System.out.println ("Enter a sentence");
+    String s = sc.nextLine ();
+      s = s.toUpperCase ();	//s= stoUpperCase;
+      s = s + " ";
+    int l = s.length ();
+    char ch = ' ';
+    for (int i = 0; i < l; i++)
+      {
+	ch = s.charAt (i);
+	if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+	  System.out.println ("*");
+	else
+	  System.out.println (ch);
+      }
+  }
+}
